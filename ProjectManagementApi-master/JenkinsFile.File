@@ -1,12 +1,12 @@
 pipeline {
 agent any
 environment {
-dotnet = 'C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe'
+dotnet = 'C:\Program Files (x86)\dotnet\dotnet.exe'
 }
 stages {
 stage ('Checkout') {
 steps {
-git  url: 'https://github.com/NeelBhatt/SampleCliApp',branch: 'master'
+git  url: 'https://github.com/imashokkumar86/ProjectManagementAPI',branch: 'master'
 }
 }
 stage ('Restore PACKAGES') {
